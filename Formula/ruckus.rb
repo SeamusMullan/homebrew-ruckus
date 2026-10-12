@@ -1,28 +1,28 @@
 class Ruckus < Formula
   desc "Install ROS 2, manage its environments and start sessions in tmux"
   homepage "https://github.com/SeamusMullan/ruckus"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/SeamusMullan/ruckus/releases/download/v#{version}/ruckus-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "3116ac8dcf113dd37ba59514397868f654a3e74600b0164a7f17e1bec22b8fb1"
+      sha256 "00e3a93233b1dbe2a93153c4ce87ae0b064fe5d479ba2cd32c7537a41f330b75"
     end
     on_intel do
       url "https://github.com/SeamusMullan/ruckus/releases/download/v#{version}/ruckus-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "93b00592cfa37f7cf45659e4229434c02ead135c9b2f4dd2fb5742fe54e5b975"
+      sha256 "d4eaa43697ad86c45d769fccdcc49e36fde3d487ec9f6620ee38084eb1f8ae63"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/SeamusMullan/ruckus/releases/download/v#{version}/ruckus-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "723c45d8fec98a150f5eb5c7f51f07e7b304e42c7cd45df71eac9cf5b1be0cab"
+      sha256 "a0e3f13bdfec590fad001fe1ad417ea08eb246acdf887d276cbb44f8fa03e642"
     end
     on_intel do
       url "https://github.com/SeamusMullan/ruckus/releases/download/v#{version}/ruckus-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1383a01747eb322b18b977b4735136baa1a86ca4dd214ded914ded42e112f2fd"
+      sha256 "36db1b9bf42e9ca51e3df5566b22e96f3e14d86baac123a98ba1d39a118035b6"
     end
   end
 
